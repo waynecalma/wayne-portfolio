@@ -1,20 +1,40 @@
-import { useState } from 'react'
-import Navbar from './components/Navbar'; // You imported it here...
-import './App.css'
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import Projects from './components/Projects';
+import Skills from './components/Skills';
+import Achievements from './components/Achievements';
+
+
 
 function App() {
   return (
-    <div>
-      <Navbar />  {/* <--- YOU MUST ADD THIS TAG TO SHOW THE BUTTON */}
+    <div className="bg-slate-50 dark:bg-slate-900 transition-colors duration-500">
+      <Navbar />
       
-      {/* This is your main content area */}
-      <div className="flex h-screen items-center justify-center bg-slate-900">
-        <h1 className="text-4xl font-bold text-sky-400 underline">
-          My Portfolio
-        </h1>
+      {/* 1. HOME / ABOUT (The Hero Section) */}
+      <div id="hero">
+        <Hero />
       </div>
+
+      {/* 2. PROJECTS SECTION */}
+      
+      <div id="projects">
+        <Projects />
+      </div>
+
+      {/* 3. SKILLS SECTION */}
+      <div id="skills">
+        <Skills />
+      </div>
+
+      {/* 4. ACHIEVEMENTS SECTION */}
+      <div id="achievements">
+        <Achievements />
+      </div>
+      
+
     </div>
   )
 }
 
-export default App;
+export default App

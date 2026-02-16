@@ -1,6 +1,11 @@
 @import "tailwindcss";
 
+/* 1. FORCE "dark:" to listen to the class, not the system */
+@custom-variant dark (&:where(.dark, .dark *));
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
-  /* The Color Wheel works here! Hover over the rgba values below to open it. */
-  --nav-hover: rgba(255, 0, 0, 0.5);
+  --menu-hover: rgba(110, 193, 213, 0.647);
 }
