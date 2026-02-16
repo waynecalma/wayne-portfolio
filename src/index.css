@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+:root {
+  /* The Color Wheel works here! Hover over the rgba values below to open it. */
+  --nav-hover: rgba(255, 0, 0, 0.5);
+}
